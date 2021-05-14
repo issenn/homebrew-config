@@ -2,41 +2,6 @@
 # Update this Brewfile by `brew bundle dump --force` but these comments will be lost!
 # https://github.com/Homebrew/homebrew-bundle
 
-if OS.mac?
-    # macOS App Store
-    # mas  "Xcode", id: 497799835
-    # mas 'Byword', id: 420212497
-    # mas 'Giphy Capture', id: 668208984
-    # mas 'Keynote', id: 409183694
-    # mas 'Numbers', id: 409203825
-    # mas 'Spark', id: 1176895641
-    # mas 'Things', id: 904280696
-    # mas 'Tweetbot', id: 1384080005
-
-    # Security
-    # mas "1Password", id: 443987910
-elsif OS.linux?
-end
-
-# Taps
-tap "homebrew/core"
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/cask-fonts"
-tap "homebrew/services"
-
-tap "issenn/core"
-tap "issenn/cask-versions"
-tap "issenn/cask-fonts"
-tap "issenn/kong"
-
-# tap "azure/functions"
-# tap "elastic/tap"
-tap "homebrew-ffmpeg/ffmpeg"
-# tap "go-gitea/gitea"
-# tap "yudai/gotty"
-
 # Binaries
 # Essentials
 brew "pkg-config"  # https://github.com/driesvints/dotfiles/issues/20
