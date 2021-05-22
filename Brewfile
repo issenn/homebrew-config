@@ -6,9 +6,6 @@ require 'pathname'
 
 args = Homebrew.bundle_args.parse
 
-puts "Debug? #{args.debug?}"
-puts "Verbose? #{args.verbose?}"
-
 puts "args.file: #{args.file}" if args.file && ( args.debug? || args.verbose? )
 puts "ENV['HOMEBREW_BUNDLE_FILE']: #{ENV['HOMEBREW_BUNDLE_FILE']}" if ENV['HOMEBREW_BUNDLE_FILE'] && ( args.debug? || args.verbose? )
 puts "__FILE__: #{__FILE__}" if args.debug? || args.verbose?

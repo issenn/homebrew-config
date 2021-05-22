@@ -1,4 +1,4 @@
-# The folowing brew recipes will be installed by ~/.dotfiles/install/brew-updates.sh
+# The folowing brew recipes will be installed by ~/.dotfiles/homebrew-config/install/brew-updates.sh
 # Update this Brewfile by `brew bundle dump --force` but these comments will be lost!
 # https://github.com/Homebrew/homebrew-bundle
 
@@ -198,7 +198,6 @@ brew 'ffmpeg@2.8'
 # brew 'httpie'
 # brew 'hub'
 # brew 'mackup'
-brew 'mas'  # Mac App Store manager
 # brew 'stripe'
 # brew 'trash' # Manage the Trash bin
 # Spatie Medialibrary
