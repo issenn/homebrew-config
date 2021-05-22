@@ -18,6 +18,7 @@ brew "zsh"
 brew "bash"
 # brew "bash-completion"
 brew "coreutils"  # Those that come with macOS are outdated
+brew "inetutils"
 brew "grep"
 brew "make"
 brew "cmake"
@@ -80,7 +81,7 @@ brew "p7zip"
 brew "apktool"
 
 # Network
-brew "telnet"
+brew "telnet", link: false
 brew "tcpdump"
 brew "nmap"
 
