@@ -1,7 +1,7 @@
 # homebrew-config
 
 ```sh
-brew update && brew bundle -d -v
+brew update && HOMEBREW_BUNDLE_MAS_SKIP=Xcode brew bundle -d -v
 ```
 
 Test
