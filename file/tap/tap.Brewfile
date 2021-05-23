@@ -12,6 +12,8 @@ tap "issenn/cask-versions"
 tap "issenn/cask-fonts"
 tap "issenn/kong"
 
+tap "buo/cask-upgrade"
+tap "martido/homebrew-graph"
 # tap "azure/functions"
 # tap "elastic/tap"
 tap "homebrew-ffmpeg/ffmpeg"
