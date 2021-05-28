@@ -4,7 +4,7 @@
 brew update && HOMEBREW_BUNDLE_MAS_SKIP=Xcode brew bundle -d -v
 ```
 
-Test
+Test Brewfile
 
 ```sh
 HOMEBREW_NO_AUTO_UPDATE=1 brew bundle --file=Brewfile

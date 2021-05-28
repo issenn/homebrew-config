@@ -19,6 +19,8 @@ brew "bash"
 # brew "bash-completion"
 brew "coreutils"  # Those that come with macOS are outdated
 brew "inetutils"
+brew "findutils"
+brew "diffutils"
 brew "grep"
 brew "make"
 brew "cmake"
@@ -31,6 +33,7 @@ brew "gnu-sed"
 brew "gnu-tar"
 brew "gnu-which"
 brew "gnutls"
+brew "gnu-time"
 brew "autoconf"
 brew "automake"
 brew "libtool"
@@ -55,15 +58,22 @@ brew "jq"
 brew "htop"
 brew "gotop"
 brew "autojump"
+brew "httpie"
 
 # Security
 brew "base64"
 brew "pinentry-mac"
-# brew "gpg"
 brew "gnupg"
+# brew "gpg"
 brew "pgpdump"
-brew "git-crypt"
 brew "bitwarden-cli"
+brew "git-crypt"
+# brew "git-remote-gcrypt"
+# brew "git-secret"
+# brew "git-secrets"
+# brew "blackbox"
+brew "sops"
+# brew "transcrypt"
 brew "cfssl"
 # brew "acme"
 # brew "certbot"
@@ -94,15 +104,23 @@ brew "vim"
 brew "diff-so-fancy"
 # brew "colordiff"
 # brew "go"
+
+brew "perl"
+brew "cpanminus"
+brew "plenv"
+brew "perl-build"
+
 brew "python"
 brew "pyenv"
 brew "pyenv-virtualenv"
+
 brew "ruby"
-brew "ruby-build"
 # brew "ruby-completion"
 brew "rbenv"
+brew "ruby-build"
 brew "rbenv-gemset"
 brew "rbenv-vars"
+
 brew "node"
 # brew "node@10"
 brew "node-build"
@@ -122,7 +140,6 @@ brew "erlang@22"
 # brew 'php@7.2'
 # brew 'composer'
 # brew 'nginx'
-# brew 'node'
 # brew 'redis'
 # brew 'yarn'
 
@@ -153,16 +170,22 @@ brew "frps", restart_service: :changed
 brew "frpc", restart_service: :changed
 
 # Database
+brew "sqlite"
+
 brew "mysql@5.7", restart_service: :changed, link: true, conflicts_with: ["mysql"]
 # brew "mysql-connector-c++", link: false
 brew "mysql-connector-c++@1.1", link: false
 brew "mysql-client", link: false
 brew "mysql-client@5.7", link: false
-brew "sqlite"
+
 # brew "postgresql"
+
 brew "redis", restart_service: :changed
 brew "rabbitmq", restart_service: :changed
 
+# brew "leveldb"
+# https://github.com/wbolster/plyvel/issues/114
+brew "issenn/core/leveldb@1.22"
 
 brew "logstash"
 brew "filebeat"
@@ -184,6 +207,12 @@ brew "megatools"
 # brew "fontconfig"
 # brew "issenn/core/vlmcsd"
 
+# BookMark
+# brew "buku"
+
+# Translation
+# brew "translate-shell"
+
 # API Control
 brew 'flarectl'
 
@@ -192,6 +221,7 @@ brew 'create-dmg'
 
 # brew 'awscli'
 # brew 'bat' # "cat" on steroids
+# brew "ccat"
 # brew 'ffmpeg'
 brew 'ffmpeg@2.8'
 # brew 'gh'
