@@ -70,10 +70,11 @@ brew "bitwarden-cli"
 brew "git-crypt"
 # brew "git-remote-gcrypt"
 # brew "git-secret"
-# brew "git-secrets"
+brew "git-secrets"
 # brew "blackbox"
-brew "sops"
 # brew "transcrypt"
+brew "sops"
+brew "age"
 brew "cfssl"
 # brew "acme"
 # brew "certbot"
@@ -94,6 +95,12 @@ brew "apktool"
 brew "telnet", link: false
 brew "tcpdump"
 brew "nmap"
+brew "socat"
+# brew "connect"
+# brew "mitmproxy"
+
+# Proxy
+# brew "proxychains-ng"
 
 # Configuration
 brew "stow"
@@ -103,7 +110,8 @@ brew "lua"
 brew "vim"
 brew "diff-so-fancy"
 # brew "colordiff"
-# brew "go"
+
+brew "go"
 
 brew "perl"
 brew "cpanminus"

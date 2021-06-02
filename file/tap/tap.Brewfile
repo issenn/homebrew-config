@@ -14,8 +14,10 @@ tap "issenn/kong"
 
 tap "buo/cask-upgrade"
 tap "martido/homebrew-graph"
+
 # tap "azure/functions"
 # tap "elastic/tap"
 tap "homebrew-ffmpeg/ffmpeg"
 # tap "go-gitea/gitea"
 # tap "yudai/gotty"
+tap "filippo.io/age", "https://filippo.io/age"
