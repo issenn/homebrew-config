@@ -12,6 +12,7 @@ brew "curl"  # , link: false
 brew "wget"
 brew "git"
 brew "zsh"
+# brew "zinit"  # now load from issenn/zsh-config using git
 # brew "zsh-autosuggestions"
 # brew "zsh-completions"
 # brew "zsh-syntax-highlighting"
@@ -67,6 +68,7 @@ brew "gnupg"
 # brew "gpg"
 brew "pgpdump"
 brew "bitwarden-cli"
+brew "nikaro/tap/rbw"
 brew "git-crypt"
 # brew "git-remote-gcrypt"
 # brew "git-secret"
@@ -131,13 +133,16 @@ brew "rbenv-vars"
 
 brew "node"
 # brew "node@10"
+# brew "nvm"  # Homebrew installation is not supported. # https://github.com/nvm-sh/nvm#important-notes
 brew "node-build"
 brew "yarn"
+
 brew "hugo"
 
 brew "imath"
 brew "openexr"
 brew "imagemagick"
+# brew "imagemagick@6"
 brew "neofetch"
 
 brew "erlang"
@@ -174,6 +179,7 @@ brew "bind"
 # brew "traefik@1"
 # brew "tor"
 # brew "privoxy"
+
 brew "frps", restart_service: :changed
 brew "frpc", restart_service: :changed
 
@@ -313,12 +319,15 @@ cask "transmit"
 # cask "picgo"
 # cask "keybase"
 
+# cask "launchcontrol"
+
 cask 'vox'
 cask 'mpv'
 cask 'iina'
 cask 'vlc'
 cask 'lyricsx'
 cask 'issenn/cask-versions/audirvana'
+cask 'listen1'
 
 cask 'soundflower'
 
