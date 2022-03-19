@@ -21,8 +21,13 @@ brew "bash"
 brew "coreutils"  # Those that come with macOS are outdated
 brew "inetutils"
 brew "findutils"
+# brew "fd"
 brew "diffutils"
+# brew "ncdu"
+# brew "tldr"
 brew "grep"
+# brew "ack"
+# brew "ag"
 brew "make"
 brew "cmake"
 brew "gcc"
@@ -30,7 +35,7 @@ brew "gcc"
 brew "gawk"
 brew "gnu-getopt"
 brew "gnu-indent"
-brew "gnu-sed"
+brew "gnu-sed"  # , args: ["with-default-names"]
 brew "gnu-tar"
 brew "gnu-which"
 brew "gnutls"
@@ -45,19 +50,21 @@ brew "reattach-to-user-namespace"
 # brew "exa"
 # brew "fzf"
 brew "ncurses"
-brew "screenfetch"
 brew "lolcat"
 brew "timewarrior"
-# brew "connect"
 brew "readline"
 brew "zlib"  # Needed for Memcached
 brew "rename"
 brew "jq"
 # brew "gettext", link: true
+brew "xmlstarlet"
 
 # brew "openssh"
 brew "htop"
 brew "gotop"
+# brew "bpytop"
+# brew "iperf"
+# brew "z"
 brew "autojump"
 brew "httpie"
 
@@ -79,7 +86,7 @@ brew "sops"
 brew "age"
 brew "cfssl"
 # brew "acme"
-# brew "certbot"
+brew "certbot"
 # brew "hashcat"
 # brew "hashcat-long"
 # brew "aircrack-ng"
@@ -92,17 +99,7 @@ brew "zip"
 brew "unzip"
 brew "p7zip"
 brew "apktool"
-
-# Network
-brew "telnet", link: false
-brew "tcpdump"
-brew "nmap"
-brew "socat"
-# brew "connect"
-# brew "mitmproxy"
-
-# Proxy
-# brew "proxychains-ng"
+brew "par2"
 
 # Configuration
 brew "stow"
@@ -111,7 +108,9 @@ brew "stow"
 brew "lua"
 brew "vim"
 brew "diff-so-fancy"
+# brew "delta"
 # brew "colordiff"
+# brew "fpp"
 
 brew "go"
 
@@ -143,7 +142,9 @@ brew "imath"
 brew "openexr"
 brew "imagemagick"
 # brew "imagemagick@6"
+# brew "screen"
 brew "neofetch"
+brew "screenfetch"
 
 brew "erlang"
 brew "erlang@22"
@@ -169,19 +170,40 @@ brew "erlang@22"
 # brew "terraform"
 # cask "powershell"
 
-# Services
+# DNS
 # brew "unbound"
 brew "bind"
+
 # brew "caddy"
 # brew "consul"
 # brew "consul-template"
+
+# Router
 # brew "traefik"
 # brew "traefik@1"
-# brew "tor"
-# brew "privoxy"
+
+# Network
+# brew "prettyping"
+brew "telnet", link: false
+brew "nmap"
+brew "socat"
+# brew "connect"
 
 brew "frps", restart_service: :changed
 brew "frpc", restart_service: :changed
+
+# Proxy
+brew "proxychains-ng"
+# brew "dante"
+# brew "leaf-proxy"
+# brew "tor"
+# brew "privoxy"
+
+# Network debugging proxy
+brew "tcpdump"
+
+# Web debugging proxy
+# brew "mitmproxy"
 
 # Database
 brew "sqlite"
@@ -212,7 +234,8 @@ brew "aria2"
 brew "annie"
 brew "youtube-dl"
 # brew "axel"
-brew "issenn/core/baidupcs-go", args: ["build-from-source", "git"]
+brew "baidupcs-go"
+# brew "issenn/core/baidupcs-go", args: ["build-from-source", "git"]
 # brew "syncthing"
 brew "rclone"
 brew "megatools"
@@ -228,15 +251,30 @@ brew "megatools"
 # brew "translate-shell"
 
 # API Control
+# Cloudflare API Control
 brew 'flarectl'
+brew 'cloudflare-wrangler'
+brew 'heroku/brew/heroku'
+
+
+# Duplicate File
+brew "jdupes"
+brew "rdfind"
+brew "fdupes"
+brew "rmlint"
+brew "periscope"
 
 # DMG Creator
 brew 'create-dmg'
 
+
+brew "lazydocker"
+brew "croc"
+
 # brew 'awscli'
 # brew 'bat' # "cat" on steroids
 # brew "ccat"
-# brew 'ffmpeg'
+brew 'ffmpeg'
 brew 'ffmpeg@2.8'
 # brew 'gh'
 # brew 'httpie'
@@ -250,6 +288,9 @@ brew 'ffmpeg@2.8'
 # brew 'pngquant'
 # brew 'svgo'
 # brew 'gifsicle'
+# brew "siege"
+# brew 'sproxy'
+# brew "pushpin"
 
 # Fonts
 # cask 'font-lato'
@@ -274,6 +315,7 @@ cask "macs-fan-control"
 cask "shadowsocksx-ng"
 cask "shadowsocksx-ng-r"
 cask "clashx"
+cask "clashx-pro"
 cask "squirrel"
 cask "iterm2"
 cask "lens"
@@ -298,16 +340,29 @@ cask "docker"
 cask "pycharm"
 cask "intellij-idea"
 cask "android-studio"
+cask "android-platform-tools"
 cask "goland"
 # cask "webstorm"
 cask "datagrip"
-cask "charles"
+
+# Network
+# Network debugging proxy
 # cask "wireshark"
+
+# Web debugging proxy
+cask "charles"
 cask "postman"
+# cask "proxyman"
+# cask "lightproxy"
+# cask "packetproxy"
+# cask "whistle"
+
+# Chat
 cask "wechat"
 # cask "wechatwork"
 cask "qq"
 cask "discord"
+
 cask "youdaonote"
 cask "apache-directory-studio"
 cask "jump"
@@ -318,6 +373,7 @@ cask "transmit"
 # cask "poi"
 # cask "picgo"
 # cask "keybase"
+# cask "gitkraken"
 
 # cask "launchcontrol"
 
@@ -381,6 +437,7 @@ cask 'steam'
 # cask 'quicklook-json'
 # cask 'quicklook-csv'
 # cask 'qlstephen'
+# cask "provisionql"
 
 # Do it
 # brew update && brew bundle -d -v
